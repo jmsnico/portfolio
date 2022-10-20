@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio Website",
+  "main": "index.js",
+  "homepage": "https://jmsnico.github.io/portfolio",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o views/css/ --recursive",
+    "deploy": "gh-pages -d views"
+  },
+  "author": "Nico Tenebro",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "node-sass": "^7.0.3"
+  }
+}
