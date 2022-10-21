@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import 'config';
 @import 'menu';
 
@@ -68,6 +68,7 @@ main{
 }
 
 .about-info{
+    margin: 1.5rem 0;
     display: grid;
     grid-gap:30px;
     grid-template-areas: 
@@ -88,7 +89,29 @@ main{
     }
     .bio{
         grid-area: bio;
-        font-size: 1.5rem;
+        h3{
+            font-size: 1.5rem;
+            font-weight: 300;
+            .text-secondary{
+                font-weight: 400;
+            }
+        }
+
+        .text-secondary{
+            color: lighten($secondary-color,7);
+        }
+        .text-bio1{
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1.2em;
+
+
+        }
+        .text-bio2{
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 1.4em;
+        }
     }
     .tech-skills{
         font-size: 2rem;
