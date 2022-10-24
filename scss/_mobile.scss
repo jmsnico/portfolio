@@ -56,7 +56,12 @@
         'skill-5 skill-6'
         ;
         grid-template-columns: repeat(2,1fr);
-
+        .bio{
+        padding: 1.5rem;
+        border-top: 3px $secondary-color solid;
+        border-left: none;
+        border-bottom: 3px $secondary-color solid;
+        }
         .bio-img{
             width: 150px;
             height: 150px;
