@@ -18,8 +18,12 @@ body{
 h1,h2,h3{
     margin: 0;
     font-weight: 400;
-    &.lg-heading{
+    &.main-heading{
         font-size: 6rem;
+        
+    }
+    &.lg-heading{
+        font-size: 4rem;
         
     }
     &.sm-heading{
@@ -41,7 +45,7 @@ header{
     width: 100%;
 }
 main{
-    padding: 4rem;
+    padding: 6rem;
     //height: 100%;
     min-height: calc(100vh - 60px);
     .icons{
@@ -66,16 +70,18 @@ main{
     }
 
 }
-
 .about-info{
     margin: 1.5rem 0;
     display: grid;
     grid-gap:30px;
     grid-template-areas: 
     'bio-img bio bio'
+    'exp-header exp-header exp-header'
+    'exp-1 exp-2 .'
     'tech-skills tech-skills tech-skills '
     'skill-1 skill-2 skill-3'
-    'skill-4 skill-5 skill-6';
+    'skill-4 skill-5 skill-6'
+    'skill-7 skill-8 .';
     grid-template-columns: repeat(3, 1fr);
 
 
@@ -119,8 +125,19 @@ main{
             
         }
     }
+    .exp-header{
+        grid-area: exp-header;
+    }
+    .exp-1{
+        grid-area: exp-1;
+    }
+    .work{
+        background: lighten($primary-color,5);
+        padding: 0.5rem;
+        border-left: $secondary-color 5px solid;
+    }
     .tech-skills{
-        font-size: 2rem;
+        grid-area: tech-skills;
     }
     .skill-1{
         grid-area: skill-1;
@@ -139,6 +156,12 @@ main{
     }
     .skill-6{
         grid-area: skill-6;
+    }
+    .skill-7{
+        grid-area: skill-7;
+    }
+    .skill-8{
+        grid-area: skill-8;
     }
     .skills{
         //text-align: center;

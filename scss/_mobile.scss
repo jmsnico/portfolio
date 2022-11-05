@@ -21,12 +21,17 @@
             margin-bottom: 1rem;
         }
     }
+    .navbar{
+        visibility: hidden;
+    }
+    .menu-btn{
+        visibility: visible;
+    }
     ul.menu-nav,
-    div.menu-branding{
+    div.menu-logo{
         float: none;
         width: 100%;
         min-height: 0;
-
         &.show{
             transform: translate3d(0,0,0);
         }
@@ -35,25 +40,28 @@
         height: 75vh;
         transform: translate3d(-100%,0,0);
         font-size: 24px;
-
     }
-    .menu-branding{
+    .menu-logo{
         height: 25vh;
-        transform: translate3d(100%,0,0);
         font-size: 24px;
-        .portrait{
+        transform: translate3d(100%,0,0);
+        .logo-img{
             width: 150px;
             height: 150px;
         }
     }
+
     .about-info{
         grid-template-areas: 
         'bio-img bio-img'
         'bio bio'
+        'exp-header exp-header'
+        'exp-1 exp-1'
         'tech-skills tech-skills'
         'skill-1 skill-2'
         'skill-3 skill-4'
         'skill-5 skill-6'
+        'skill-7 skill-8'
         ;
         grid-template-columns: repeat(2,1fr);
         .bio{
@@ -94,6 +102,8 @@
                 grid-template-areas: 
                 'bio-img'
                 'bio'
+                'exp-header'
+                'exp-1'
                 'tech-skills'
                 'skill-1'
                 'skill-2'
@@ -101,6 +111,8 @@
                 'skill-4'
                 'skill-5'
                 'skill-6'
+                'skill-7'
+                'skill-8'
                 ;
                 grid-template-columns: 1fr;
             

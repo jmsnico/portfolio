@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>About Me</title>
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>About Me</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
       <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
         <div class="btn-line"></div>
       </div>
       <div class="menu">
+        <div class="menu-logo">
+          <a href="index.html">
+            <img src="images/logo_jms.png" class="logo-img" alt="LOGO">
+          </a>
+        </div>
         <div class="menu-branding">
           <div class="portrait"></div>
         </div>
@@ -41,102 +45,138 @@
           </li>
         </ul>
       </div>
-    </header>
+    </nav>
+  </header>
 
-    <main id="about" class="main-wrapper">
-      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
-      <!-- <h2 class="sm-heading">Let me tell you about myself</h2> -->
-      <div class="about-info">
-        <img
-          src="images/japan-snow-cropped.jpg"
-          class="bio-img"
-          alt="My Picture"
-        />
+  <main id="about" class="main-wrapper">
+    <h2 class="lg-heading">About <span class="text-secondary">Me</span></h2>
+    <!-- <h2 class="sm-heading">Let me tell you about myself</h2> -->
+    <div class="about-info">
+      <!-- -------------------------- -->
+      <!-- -----------BIO------------ -->
+      <!-- -------------------------- -->
+      <img src="images/japan-snow-cropped.jpg" class="bio-img" alt="My Picture" />
+      <div class="bio">
+        <h3>Hello! I'm <span class="text-secondary">Nico</span>.</h3>
+        <p class="text-bio2">
+          I'm a <span class="text-secondary">Web developer </span> and
+          <span class="text-secondary">Programmer</span> who was born and
+          raised in Cebu City and currently resides in Santa Rosa Laguna.
+        </p>
 
-        <div class="bio">
-          <h3>Hello! I'm <span class="text-secondary">Nico</span>.</h3>
-          <p class="text-bio2">
-            I'm a <span class="text-secondary">Web developer </span> and
-            <span class="text-secondary">Programmer</span> who was born and
-            raised in Cebu City and currently resides in Santa Rosa Laguna.
-          </p>
-
-          <p class="text-bio2">
-            I enjoy creating simple and interactive interface designs, as well
-            as working with the back-end because it gives me a sense of
-            accomplishment, and I always strive to write elegant and efficient
-            code, whether in HTML, CSS, JavaScript, or NodeJS.
-          </p>
-          <p class="text-bio2">
-            When I'm not coding, you can find me in the gym or on the basketball
-            court shooting some hoops.
-          </p>
-        </div>
-
-        <h2 class="tech-skills text-secondary">Technical Skills</h2>
-        <div class="skills skill-1">
-          <h3>HTML</h3>
-          <h2>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-          </h2>
-        </div>
-        <div class="skills skill-2">
-          <h3>JavaScript</h3>
-          <h2 te>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-          </h2>
-        </div>
-        <div class="skills skill-3">
-          <h3>CSS</h3>
-          <h2>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-          </h2>
-        </div>
-        <div class="skills skill-4">
-          <h3>NodeJS</h3>
-          <h2>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-          </h2>
-        </div>
-        <div class="skills skill-5">
-          <h3>ExpressJS</h3>
-          <h2>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-          </h2>
-        </div>
-        <div class="skills skill-6">
-          <h3>MongoDB & SQL</h3>
-          <h2>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-regular fa-circle"></i>
-          </h2>
-        </div>
+        <p class="text-bio2">
+          I enjoy creating simple and interactive interface designs, as well
+          as working with the back-end because it gives me a sense of
+          accomplishment, and I always strive to write elegant and efficient
+          code, whether in HTML, CSS, JavaScript, or NodeJS.
+        </p>
+        <p class="text-bio2">
+          When I'm not coding, you can find me in the gym or on the basketball
+          court shooting some hoops.
+        </p>
       </div>
-    </main>
-    <footer id="main-footer">Copyright &copy; 2022</footer>
-    <script src="js/main.js"></script>
-  </body>
+      <!-- -------------------------------------- -->
+      <!-- -----------WORK EXPERIENCE------------ -->
+      <!-- -------------------------------------- -->
+      <div class="exp-header">
+        <h2 class="text-secondary">Work Experience</h2>
+      </div>
+      <div class="work exp-1">
+        <span>On the Job Trainee (OJT) <br>
+          Olivarez College Tagaytay – Tagaytay <br>
+          January 17 2022 – June 6 2022</span>
+      </div>
+      <!-- -------------------------------------- -->
+      <!-- -----------TECHNICAL SKILLS------------ -->
+      <!-- -------------------------------------- -->
+      <div class="tech-skills">
+        <h2 class="text-secondary">Technical Skills</h2>
+      </div>
+      <div class="skills skill-1">
+        <h3>HTML</h3>
+        <h2>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+        </h2>
+      </div>
+      <div class="skills skill-2">
+        <h3>JavaScript</h3>
+        <h2 te>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+        </h2>
+      </div>
+      <div class="skills skill-3">
+        <h3>CSS</h3>
+        <h2>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+        </h2>
+      </div>
+      <div class="skills skill-4">
+        <h3>NodeJS</h3>
+        <h2>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+        </h2>
+      </div>
+      <div class="skills skill-5">
+        <h3>ExpressJS</h3>
+        <h2>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+        </h2>
+      </div>
+      <div class="skills skill-6">
+        <h3>.NET</h3>
+        <h2>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+        </h2>
+      </div>
+      <div class="skills skill-7">
+        <h3>MongoDB</h3>
+        <h2>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+        </h2>
+      </div>
+      <div class="skills skill-8">
+        <h3>Microsoft Sql</h3>
+        <h2>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+        </h2>
+      </div>
+    </div>
+  </main>
+  <footer id="main-footer">Copyright &copy; 2022</footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
