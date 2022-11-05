@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>My Projects</title>
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>My Projects</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
       <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
         <div class="btn-line"></div>
       </div>
       <div class="menu">
+        <div class="menu-logo">
+          <a href="index.html">
+            <img src="images/logo_jms.png" class="logo-img" alt="LOGO">
+          </a>
+        </div>
         <div class="menu-branding">
           <div class="portrait"></div>
         </div>
@@ -41,55 +45,41 @@
           </li>
         </ul>
       </div>
-    </header>
+    </nav>
+  </header>
 
-    <main id="projects" class="main-wrapper">
-      <h1 class="lg-heading">
-        My <span class="text-secondary">Projects</span>
-      </h1>
-      <h2 class="sm-heading">Check out some of my projects...</h2>
-      <div class="projects">
-        <div class="item">
-          <a href="https://jmsnico.github.io/projects-axie_energy_counter/">
-            <img
-              src="images/Axie-energy-counter.jpg"
-              class="project-img"
-              alt="Projects"
-            />
-          </a>
-          <a
-            href="https://jmsnico.github.io/projects-axie_energy_counter/"
-            class="btn-light"
-          >
-            <i class="fas fa-eye"></i> Project
-          </a>
-          <a
-            href="https://github.com/jmsnico/projects-axie_energy_counter.git"
-            class="btn-dark"
-          >
-            <i class="fab fa-github"></i> Github
-          </a>
-        </div>
-        <div class="item">
-          <a href="https://jmsnico.github.io/projects-todoApp/">
-            <img src="images/todoApp.jpg" class="project-img" alt="Projects" />
-          </a>
-          <a
-            href="https://jmsnico.github.io/projects-todoApp/"
-            class="btn-light"
-          >
-            <i class="fas fa-eye"></i> Project
-          </a>
-          <a
-            href="https://github.com/jmsnico/projects-todoApp.git"
-            class="btn-dark"
-          >
-            <i class="fab fa-github"></i> Github
-          </a>
-        </div>
+  <main id="projects" class="main-wrapper">
+    <h1 class="lg-heading">
+      My <span class="text-secondary">Projects</span>
+    </h1>
+    <h2 class="sm-heading">Check out some of my projects...</h2>
+    <div class="projects">
+      <div class="item">
+        <a href="https://jmsnico.github.io/projects-axie_energy_counter/">
+          <img src="images/Axie-energy-counter.jpg" class="project-img" alt="Projects" />
+        </a>
+        <a href="https://jmsnico.github.io/projects-axie_energy_counter/" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="https://github.com/jmsnico/projects-axie_energy_counter.git" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
       </div>
-    </main>
-    <footer id="main-footer">Copyright &copy; 2022</footer>
-    <script src="js/main.js"></script>
-  </body>
+      <div class="item">
+        <a href="https://jmsnico.github.io/projects-todoApp/">
+          <img src="images/todoApp.jpg" class="project-img" alt="Projects" />
+        </a>
+        <a href="https://jmsnico.github.io/projects-todoApp/" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="https://github.com/jmsnico/projects-todoApp.git" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer id="main-footer">Copyright &copy; 2022</footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
