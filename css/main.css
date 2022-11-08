@@ -36,7 +36,7 @@
           .menu .menu-nav .nav-item .nav-link:hover {
             color: #8E0E00; } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 861px) and (max-width: 1170px) {
   header {
     position: fixed;
     top: 0;
@@ -68,7 +68,7 @@
           .menu .menu-nav .nav-item .nav-link:hover {
             color: #8E0E00; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .menu-btn {
     position: absolute;
     z-index: 3;
@@ -225,7 +225,7 @@ main {
   margin: 1.5rem 0;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bio-img bio bio' 'exp-header exp-header exp-header' 'exp-1 exp-2 .' 'tech-skills tech-skills tech-skills ' 'skill-1 skill-2 skill-3' 'skill-4 skill-5 skill-6' 'skill-7 skill-8 .';
+  grid-template-areas: 'bio-img bio bio' 'exp-header exp-header exp-header' 'exp-1 exp-2 .' 'web web web' 'skill-1 skill-2 skill-3' 'skill-4 . .' 'programming programming programming' 'skill-5 skill-6 .' 'database database database' 'skill-7 skill-8 .';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     grid-area: bio-img;
@@ -263,8 +263,12 @@ main {
     background: #2f3233;
     padding: 0.5rem;
     border-left: #8E0E00 5px solid; }
-  .about-info .tech-skills {
-    grid-area: tech-skills; }
+  .about-info .web {
+    grid-area: web; }
+  .about-info .programming {
+    grid-area: programming; }
+  .about-info .database {
+    grid-area: database; }
   .about-info .skill-1 {
     grid-area: skill-1; }
   .about-info .skill-2 {
@@ -345,11 +349,11 @@ main {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 861px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   main {
     align-items: center;
     text-align: center; }
@@ -381,7 +385,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bio-img bio-img' 'bio bio' 'exp-header exp-header' 'exp-1 exp-1' 'tech-skills tech-skills' 'skill-1 skill-2' 'skill-3 skill-4' 'skill-5 skill-6' 'skill-7 skill-8';
+    grid-template-areas: 'bio-img bio-img' 'bio bio' 'exp-header exp-header' 'exp-1 exp-1' 'web web' 'skill-1 skill-2' 'skill-3 skill-4' 'programming programming' 'skill-5 skill-6' 'database database' 'skill-7 skill-8';
     grid-template-columns: repeat(2, 1fr); }
     .about-info .bio {
       padding: 1.5rem;
@@ -406,7 +410,7 @@ main {
       margin-top: 1rem;
       font-size: 3.5rem; }
   .about-info {
-    grid-template-areas: 'bio-img' 'bio' 'exp-header' 'exp-1' 'tech-skills' 'skill-1' 'skill-2' 'skill-3' 'skill-4' 'skill-5' 'skill-6' 'skill-7' 'skill-8';
+    grid-template-areas: 'bio-img' 'bio' 'exp-header' 'exp-1' 'web' 'skill-1' 'skill-2' 'skill-3' 'skill-4' 'programming' 'skill-5' 'skill-6' 'database' 'skill-7' 'skill-8';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: 1fr; } }
