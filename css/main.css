@@ -225,7 +225,7 @@ main {
   margin: 1.5rem 0;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bio-img bio bio' 'exp-header exp-header exp-header' 'exp-1 exp-2 .' 'web web web' 'skill-1 skill-2 skill-3' 'skill-4 . .' 'programming programming programming' 'skill-5 skill-6 .' 'database database database' 'skill-7 skill-8 .';
+  grid-template-areas: 'bio-img bio bio' 'exp-header exp-header exp-header' 'exp-1 exp-2 .' 'web web web' 'skill-1 skill-2 skill-3' 'skill-4 . .' 'programming programming programming' 'skill-5 skill-6 skill-7' 'database database database' 'skill-8 skill-9 .';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     grid-area: bio-img;
@@ -285,6 +285,8 @@ main {
     grid-area: skill-7; }
   .about-info .skill-8 {
     grid-area: skill-8; }
+  .about-info .skill-9 {
+    grid-area: skill-9; }
   .about-info .skills {
     background: #2f3233;
     padding: 0.5rem;
@@ -385,7 +387,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bio-img bio-img' 'bio bio' 'exp-header exp-header' 'exp-1 exp-1' 'web web' 'skill-1 skill-2' 'skill-3 skill-4' 'programming programming' 'skill-5 skill-6' 'database database' 'skill-7 skill-8';
+    grid-template-areas: 'bio-img bio-img' 'bio bio' 'exp-header exp-header' 'exp-1 exp-1' 'web web' 'skill-1 skill-2' 'skill-3 skill-4' 'programming programming' 'skill-5 skill-6' 'skill-7 .' 'database database' 'skill-8 skill-9';
     grid-template-columns: repeat(2, 1fr); }
     .about-info .bio {
       padding: 1.5rem;
@@ -410,7 +412,7 @@ main {
       margin-top: 1rem;
       font-size: 3.5rem; }
   .about-info {
-    grid-template-areas: 'bio-img' 'bio' 'exp-header' 'exp-1' 'web' 'skill-1' 'skill-2' 'skill-3' 'skill-4' 'programming' 'skill-5' 'skill-6' 'database' 'skill-7' 'skill-8';
+    grid-template-areas: 'bio-img' 'bio' 'exp-header' 'exp-1' 'web' 'skill-1' 'skill-2' 'skill-3' 'skill-4' 'programming' 'skill-5' 'skill-6' 'skill-7' 'database' 'skill-8' 'skill-9';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: 1fr; } }
